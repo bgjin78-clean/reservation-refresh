@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 160 15% 97%;
+    --foreground: 200 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 25% 15%;
+
+    --primary: 174 62% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 30% 92%;
+    --secondary-foreground: 174 62% 25%;
+
+    --muted: 170 15% 93%;
+    --muted-foreground: 200 10% 45%;
+
+    --accent: 174 40% 88%;
+    --accent-foreground: 174 62% 22%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 170 15% 88%;
+    --input: 170 15% 88%;
+    --ring: 174 62% 40%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 174 25% 12%;
+    --sidebar-foreground: 170 15% 90%;
+    --sidebar-primary: 174 62% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 174 20% 20%;
+    --sidebar-accent-foreground: 170 15% 90%;
+    --sidebar-border: 174 15% 22%;
+    --sidebar-ring: 174 62% 50%;
+
+    --success: 152 60% 42%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border shadow-sm;
+  }
+}
