@@ -38,11 +38,12 @@ Supabase 대시보드 → **SQL Editor** 에서
 1. **Authentication → Providers → Google** 활성화
 2. Client ID / Secret 입력 후 저장
 3. **Authentication → URL Configuration**
-   - Site URL: `http://localhost:8080` (배포 후 운영 도메인으로 변경)
+   - Site URL: `https://reservation.refreshhome.co.kr`
    - Redirect URLs에 추가:
+     - `https://reservation.refreshhome.co.kr`
+     - `https://reservation.refreshhome.co.kr/**`
      - `http://localhost:8080`
      - `http://localhost:8080/**`
-     - (배포 시) `https://your-domain.com` 및 `https://your-domain.com/**`
 
 ## 4. 실행
 
@@ -51,7 +52,8 @@ npm install
 npm run dev
 ```
 
-브라우저에서 `http://localhost:8080` → Google 로그인 → 일정 추가
+브라우저에서 `http://localhost:8080` → Google 로그인 → 일정 추가  
+운영 주소: `https://reservation.refreshhome.co.kr/`
 
 ## 권한 참고
 

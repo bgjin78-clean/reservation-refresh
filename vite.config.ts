@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // GitHub Pages project site: https://<user>.github.io/reservation-refresh/
-  base: mode === "production" ? "/reservation-refresh/" : "/",
+  // 커스텀 도메인 https://reservation.refreshhome.co.kr/ 루트 배포
+  base: "/",
   server: {
     host: "::",
     port: 8080,
