@@ -22,3 +22,14 @@ export interface DailyRevenue {
   notes: string;
   region: string;
 }
+
+export interface WorkReview {
+  id: string;
+  title: string;
+  description: string;
+  service: string;
+  workDate: string | null; // YYYY-MM-DD
+  photoUrls: string[];
+  videoUrl: string;
+  createdAt: string;
+}

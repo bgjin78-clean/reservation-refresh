@@ -110,6 +110,45 @@ export type Database = {
         }
         Relationships: []
       }
+      work_reviews: {
+        Row: {
+          id: string
+          title: string
+          description: string
+          service: string
+          work_date: string | null
+          photo_urls: string[]
+          video_url: string
+          created_by: string | null
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          title: string
+          description?: string
+          service?: string
+          work_date?: string | null
+          photo_urls?: string[]
+          video_url?: string
+          created_by?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          title?: string
+          description?: string
+          service?: string
+          work_date?: string | null
+          photo_urls?: string[]
+          video_url?: string
+          created_by?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string

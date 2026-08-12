@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { AuthProvider, useAuth } from "@/contexts/AuthContext";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
+import Reviews from "./pages/Reviews";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
@@ -62,6 +63,7 @@ const App = () => {
                 }
               >
                 <Route path="/" element={<Home />} />
+                <Route path="/reviews" element={<Reviews />} />
               </Route>
               <Route path="*" element={<NotFound />} />
             </Routes>
