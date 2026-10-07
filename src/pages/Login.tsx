@@ -67,6 +67,7 @@ const Login = () => {
           <div className="text-center">
             <h1 className="text-2xl font-bold text-foreground">리프레시홈</h1>
             <p className="mt-1 text-sm text-muted-foreground">매트리스 청소 전문 일정관리</p>
+            <p className="mt-2 text-xs text-muted-foreground">승인된 Google 계정만 로그인할 수 있습니다</p>
           </div>
 
           {inAppBrowser ? (
